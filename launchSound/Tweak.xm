@@ -1,8 +1,6 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import <SpringBoard/SBApplicationController.h>
 
-#define tweetbotID @"com.tapbots.Tweetbot"
-
 static SystemSoundID sound;
 static BOOL loaded = NO;
 
@@ -19,13 +17,8 @@ static BOOL loaded = NO;
 %new(v@:)
 - (void) playNow
 {
-    if (!loaded) {
-        SBApplicationController *SBAppConroller = (SBApplicationController *)[%c(SBApplicationController) sharedInstance];
-        NSArray *array = [SBAppConroller applicationsWithBundleIdentifier:tweetbotID];
-        if ([array count] < 1) return;
-        
-        NSBundle *TBbundle = (NSBundle*)[[array objectAtIndex:0] bundle];
-        AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:[TBbundle pathForResource:@"button_click" ofType:@"caf"]], &sound);
+    if (!loaded) { 
+        AudioServicesCreateSystemSoundID((CFURLRef)[NSURL fileURLWithPath:@"/Applications/YouTube.app/button_click.caf"], &sound);
         loaded = YES;
     }
     AudioServicesPlaySystemSound(sound);
@@ -37,3 +30,6 @@ static BOOL loaded = NO;
 }
 
 %end
+
+
+//require to have button_click.caf inside YouTube.app

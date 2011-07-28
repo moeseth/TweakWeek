@@ -1,0 +1,9 @@
+Package: com.w00tylab.ushare
+Name: UShare
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Share youtube links from Youtube.app
+Maintainer: moeseth
+Author: moeseth
+Section: Tweaks
