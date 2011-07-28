@@ -1,9 +1,9 @@
-Package: com.w00tylab.launchsound
+Package: com.w00tylab.launchSound
 Name: launchSound
 Depends: mobilesubstrate
 Version: 1.0
 Architecture: iphoneos-arm
-Description: Play Tweetbot sound when you launch apps.
+Description: Play a Tapping sound when you launch apps
 Maintainer: moeseth
 Author: moeseth
 Section: Tweaks

@@ -30,6 +30,3 @@ static BOOL loaded = NO;
 }
 
 %end
-
-
-//require to have button_click.caf inside YouTube.app
