@@ -3,7 +3,7 @@ Name: launchSound
 Depends: mobilesubstrate
 Version: 1.0
 Architecture: iphoneos-arm
-Description: Playing Tweetbot sound when you launch apps.
+Description: Play Tweetbot sound when you launch apps.
 Maintainer: moeseth
 Author: moeseth
 Section: Tweaks
