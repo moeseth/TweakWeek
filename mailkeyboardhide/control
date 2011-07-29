@@ -1,0 +1,9 @@
+Package: com.w00tylab.mailkeyboardhide
+Name: MailKeyboardHide
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Scroll down to hide KeyBoard from Mail-Composer.
+Maintainer: moeseth
+Author: moeseth
+Section: Tweaks
