@@ -1,0 +1,9 @@
+Package: com.w00tylab.funnycaller
+Name: funnycaller
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Change phone caller names and Prank your friends! Require iPhone
+Maintainer: moeseth
+Author: moeseth
+Section: Tweaks

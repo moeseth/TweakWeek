@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = funnycaller;
+		cell = PSLinkCell;
+		detail = "funnycallerListController";
+		icon = "FunnyCaller.png";
+		isController = 1;
+		label = FunnyCaller;
+	};
+}
