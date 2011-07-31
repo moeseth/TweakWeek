@@ -14,18 +14,19 @@ static BOOL emailNow = NO;
 %new(v@:)
 - (void) openTwitterAndComposeWithOption:(int)choice
 {
-    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tweetie://"]]) {
-        YTVideo *ytHook = MSHookIvar<YTVideo *>(self, "_video");
-        NSURL *url = MSHookIvar<NSURL *>(ytHook, "_infoURL");
-        NSString *title = MSHookIvar<NSString *>(ytHook, "_title");
-        if (choice == 1) {
-            NSString *finalStr = [NSString stringWithFormat:@"%@ - %@ via #UShare", title, url];
-            NSString *encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)finalStr, NULL, (CFStringRef)@"-=", kCFStringEncodingUTF8);
-            [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"twitter://post?message=%@", encodedString]]];
-        } else if (choice == 2) 
-            [UIPasteboard generalPasteboard].string = [NSString stringWithFormat:@"%@ - %@", title, url];
-    }
-}
+    YTVideo *ytHook = MSHookIvar<YTVideo *>(self, "_video");
+    NSURL *url = MSHookIvar<NSURL *>(ytHook, "_infoURL");
+    NSString *title = MSHookIvar<NSString *>(ytHook, "_title");
+    NSString *finalStr = [NSString stringWithFormat:@"%@ - %@ via #UShare", title, url];
+    NSString *encodedString = (NSString *)CFURLCreateStringByAddingPercentEscapes(NULL, (CFStringRef)finalStr, NULL,  (CFStringRef)@"&=-#", kCFStringEncodingUTF8);
+    if (choice == 1 && [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tweetie://"]]) {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"twitter://post?message=%@", encodedString]]];
+        return;
+    } else if (choice == 1 && [[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"tweetbot://"]])
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tweetbot:///post?text=%@", encodedString]]];
+    else if (choice == 2)
+        [UIPasteboard generalPasteboard].URL = url;
+        }
 
 -(void)_shareVideo
 {

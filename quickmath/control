@@ -1,0 +1,9 @@
+Package: com.w00tylab.quickmath
+Name: Quickmath
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Perform addition, subtraction, multiplication and division on the spotlight page's search-bar.
+Maintainer: moeseth
+Author: moeseth
+Section: Tweaks

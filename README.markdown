@@ -16,3 +16,11 @@ Day-3; MailKeyboardHide
 Day-4; FunnyCaller
 
 ![](http://s3.amazonaws.com/imgly_production/1621190/large.png)
+
+Day-5; QuickMath
+
+![](http://s3.amazonaws.com/imgly_production/1630696/large.png)
+
+
+
+

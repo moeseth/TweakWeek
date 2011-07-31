@@ -1,9 +1,9 @@
 Package: com.w00tylab.ushare
 Name: UShare
 Depends: mobilesubstrate
-Version: 1.0
+Version: 1.1
 Architecture: iphoneos-arm
-Description: Share youtube links from Youtube.app
+Description: Share youtube links from Youtube.app. "Tweet" works for Tweetbot.app and Twitter.app
 Maintainer: moeseth
 Author: moeseth
 Section: Tweaks
