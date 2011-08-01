@@ -26,7 +26,7 @@ static BOOL emailNow = NO;
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tweetbot:///post?text=%@", encodedString]]];
     else if (choice == 2)
         [UIPasteboard generalPasteboard].URL = url;
-        }
+}
 
 -(void)_shareVideo
 {

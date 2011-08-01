@@ -1,0 +1,9 @@
+Package: com.w00tylab.todonotes
+Name: ToDoNotes
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: ToDo-Notes on your spotlight page! Double Tap on spotlight note to hide keyboard. Run Notes.app to edit texts. See screenshots.
+Maintainer: moeseth
+Author: moeseth
+Section: Tweaks
