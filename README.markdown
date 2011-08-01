@@ -23,9 +23,9 @@ Day-5; QuickMath
 
 Day-6; ToDoNotes
 
-[](http://www.youtube.com/watch?v=ny6wXf-3XlM "Demo Video")
+<b>http://www.youtube.com/watch?v=ny6wXf-3XlM "Demo Video"</b>
 
-![](http://s3.amazonaws.com/imgly_production/1638235/large.png)(http://s3.amazonaws.com/imgly_production/1638236/large.png)
+[![](http://s3.amazonaws.com/imgly_production/1638235/large.png)](http://s3.amazonaws.com/imgly_production/1638236/large.png)
 
 
 
