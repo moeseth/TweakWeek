@@ -27,5 +27,9 @@ Day-6; ToDoNotes
 
 ![](http://s3.amazonaws.com/imgly_production/1638235/large.png)![](http://s3.amazonaws.com/imgly_production/1638236/large.png)
 
+Day-7; HiddenCalllogs
+
+![](http://s3.amazonaws.com/imgly_production/1650091/large.png)
 
 
+Okay, it's finally over! 
