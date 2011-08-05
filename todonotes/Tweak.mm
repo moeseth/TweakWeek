@@ -41,11 +41,11 @@ static BOOL email = NO;
  		string = [string stringByReplacingOccurrencesOfString:@"<div>" withString:@"\n"];    
  		string = [string stringByReplacingOccurrencesOfString:@"</div>" withString:@""];
 		string = [string stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
-        string = [string stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "]; 
+                string = [string stringByReplacingOccurrencesOfString:@"&nbsp;" withString:@" "]; 
  		NSMutableDictionary *plistDict = [[NSMutableDictionary alloc] initWithContentsOfFile:plistPath];
-        [plistDict setValue:string forKey:@"moesethSaysHi"];
-        [plistDict writeToFile:plistPath atomically:YES];
-       	[plistDict release];
+                [plistDict setValue:string forKey:@"moesethSaysHi"];
+                [plistDict writeToFile:plistPath atomically:YES];
+       	        [plistDict release];
 		return;
 	}
 	%orig;
