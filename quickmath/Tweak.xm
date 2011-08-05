@@ -10,10 +10,9 @@
 - (void)searchBarSearchButtonClicked:(UISearchBar *)clicked
 {	
 	NSString *str = clicked.text;
-	if (plusCheck  == NSNotFound && minusCheck == NSNotFound && multiplyCheck == NSNotFound && divideCheck == NSNotFound) {
+	if (plusCheck  == NSNotFound && minusCheck == NSNotFound && multiplyCheck == NSNotFound && divideCheck == NSNotFound)
 		%orig;
-		return;
-	} else {
+	else {
 		if (plusCheck != NSNotFound) {
         	NSArray *pieces = [str componentsSeparatedByString:@"+"];
         	if ([pieces count] >= 2) {
