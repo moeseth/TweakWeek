@@ -1,7 +1,9 @@
 {
 	Filter = {
 		Bundles = (
+			"com.apple.mobilenotes",
 			"com.apple.messageui",
+			"com.apple.MobileSMS",
 		);
 	};
 }
